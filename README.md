@@ -69,5 +69,9 @@ The models are:
 From the MAE results we can see that RF model outperfoms the other models, MLR is second best and Lasso model comes last.
 
 ## Productionization
-I built a flask API endpoint that was hosted on a local server by following along with the 'towords data science' tutorial in the reference section above. The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary.
+I built a flask API endpoint that was hosted on a local server by following along with the 'towords data science' tutorial in the reference section below. The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary.
+
+## Referances
+* Data scraping: https://github.com/arapfaik/scraping-glassdoor-selenium/blob/master/glassdoor%20scraping.ipynb
+* FlaskAPI : https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
 

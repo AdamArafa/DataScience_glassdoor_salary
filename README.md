@@ -51,3 +51,23 @@ Before applying the data to the Machine Learning models, some data_cleaning was 
 ## Exploratory Data Analysis (EDA)
 Checked the distributions and built many pivot tables to answer some questions related to the salray (e.g., salary based on state, salary based on experience, salary based on skills)
 I also plot a heatmap for some of the features to check the correlations between them.
+
+<img src="pivot.png" width="300" height="400"> <img src="discription.png" width="300" height="400"> <img src="heatmap.png" width="300" height="300"> 
+
+## Models Building
+I started by converting the categorical features into dummy features, and then divding the dataset into train and test sets with train size of 80% and test size of 20%.
+I build 3 different models and evaluated them using Mean Abslout Error (MAE). I chose MAE because it is relatively easy to understand and explain and outliers aren’t particularly bad in for this type of model.
+The models are:
+* Multiple Linear Regression
+* Lasso Regression - Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
+* Random Forest – Again, I build it for the same reason as the Lasso model (the sparsity associated with the data).
+
+## Models Performance
+* Random Forest - MAE = 11.22
+* Multiple Linear Regression - MAE = 18.86
+* Lasso Regression - MAE = 19.67
+From the MAE results we can see that RF model outperfoms the other models, MLR is second best and Lasso model comes last.
+
+## Productionization
+I built a flask API endpoint that was hosted on a local server by following along with the 'towords data science' tutorial in the reference section above. The API endpoint takes in a request with a list of values from a job listing and returns an estimated salary.
+

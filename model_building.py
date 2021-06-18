@@ -147,3 +147,25 @@ mae(y_test,tpred_rf_model)
 
 # sometimes combining 2 models can be beneficial for the job
 mae(y_test, ((tpred_l_model + tpred_rf_model)/2))
+
+
+
+# saving the model as a pickle (Pickling converts the object/model into a byte stream which can be stored)
+
+#import pickle
+#pickl = {'model': gs.best_estimator_}
+#pickle.dump( pickl, open( 'model_file' + ".p", "wb" ) ) # saving the trained_model in our directory
+
+# load the model and check if it works
+#def load_models():
+    #file_name = "model_file.p"
+    #with open(file_name, 'rb') as pickled:
+        #data = pickle.load(pickled)
+        #model = data['model']
+    #return model
+
+#m = load_models()
+
+#m.predict(np.array(list(X_test.iloc[1,:])).reshape(1,-1))[0]
+
+list(X_test.iloc[1,:])

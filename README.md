@@ -1,4 +1,4 @@
-# Data Science Salary Estimator based on Glassdoor data: Project Overview
+# Data Scientist Salary Estimator based on Glassdoor data: Project Overview
 * Built a tool that can help estimating a data scientist salary (helpful for me to know what to expect when landing my first job as DS)
 * The data was scraped from Glassdoor using Python/Selenium (USA data). Data from other countries can be used if Glassdoor provid that
 * Created additional features from the job description of each job (e.g., python, spark, excel, aws)
